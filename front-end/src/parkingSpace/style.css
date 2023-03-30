@@ -1,0 +1,28 @@
+.parking-space {
+    width: 200px;
+    height: 800px;
+    position: relative;
+  }
+  
+  .parking-space::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 200px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 5px;
+  }
+  
+  .parking-space::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 200px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 5px;
+  }
