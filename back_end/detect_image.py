@@ -1,4 +1,3 @@
-from torchvision.models import detection
 import numpy as np
 import argparse
 import torch
@@ -10,7 +9,7 @@ DEVICE = torch.device("cpu")
 COLOR = (0, 255, 0)
 
 parser = argparse.ArgumentParser(description='PyTorch MS_COCO infer')
-parser.add_argument('--num-classes', default=80, type=int)
+parser.add_argument('--num-classes', default=196, type=int)
 parser.add_argument('--model-path', type=str, default='./back_end/assets/stanford_car_data/tresnet_l_stanford_card_96.41.pth')
 parser.add_argument('--pic-path', type=str, default='./back_end/assets/test_images/IMG_3933.jpg')
 parser.add_argument('--model-name', type=str, default='tresnet_l')
@@ -31,8 +30,6 @@ args = parser.parse_args()
 # Setup model
 print('creating model {}...'.format(args.model_name))
 model = create_model(args, load_head=True)
-state = torch.load(args.model_path, map_location='cpu')
-model.load_state_dict(state['model'], strict=True)
 ########### eliminate BN for faster inference ###########
 model = model.cpu().eval()
 #######################################################
@@ -40,7 +37,7 @@ print('done')
 
 # load in pretrained weights and set the mode to eval
 # load the image from disk
-image = cv2.imread(args["pic_path"])
+image = cv2.imread(args.pic_path)
 orig = image.copy()
 
 # pre-processing
