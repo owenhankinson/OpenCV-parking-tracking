@@ -1,0 +1,26 @@
+Hour 1.0 - 71 frames counted  ----------------------------- start 8:00am
+
+Hour 2.0 - 157 frames counted 
+
+Hour 3.0 - 1232 frames counted 
+
+Hour 4.0 - 347 frames counted 
+
+Hour 5.0 - 480 frames counted 
+
+Hour 6.0 - 257 frames counted 
+
+Hour 7.0 - 557 frames counted 
+
+Hour 8.0 - 436 frames counted 
+
+Hour 9.0 - 2176 frames counted 
+
+Hour 10.0 - 271 frames counted 
+
+Hour 11.0 - 793 frames counted 
+
+Hour 12.0 - 241 frames counted 
+
+Hour 13.0 - 6640 frames counted 
+
