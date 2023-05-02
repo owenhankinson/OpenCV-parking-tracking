@@ -8,3 +8,6 @@ Raw results are found in results.txt where you can see the hours of operations a
 
 ### 8am - 9pm (removing outliers)
 ![Frames vs  Hours - no outlier](https://user-images.githubusercontent.com/75053404/235727534-c3baf10e-d6e6-42b3-aa5b-d1c07cd1c066.png)
+
+### Conclusion
+We expected to see some sort of normal outcome/distribution. What we can see from the graph is that peak times are 10am-12pm and 4pm-6pm which follows a reverse bell curve look of normality. 
